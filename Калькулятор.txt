@@ -1,0 +1,30 @@
+сalculatorInput = str(input("Enter a digital operation: "))
+
+
+def multiplication(*,a:int = 0,b:int = 0)->int:
+   print(f"Ответ: {a * b}")
+   return a,b
+
+def addition(*,a:int = 0,b:int = 0)->int:
+   print(f"Ответ: {a + b}")
+   return a,b
+
+def division(*,a:int = 0,b:int = 0)->int:
+   print(f"Ответ: {a / b}")
+   return a,b
+
+def subtraction(*,a:int = 0,b:int = 0)->int:
+   print(f"Ответ: {a - b}")
+   return a,b
+
+if сalculatorInput == "*":
+   multiplication(a=int(input("Введите число: ")), b = int(input("Введите число: ")))
+
+if сalculatorInput == "+":
+   addition(a=int(input("Введите число: ")), b=int(input("Введите число: ")))
+
+if сalculatorInput == "/":
+   division(a=int(input("Введите число: ")), b=int(input("Введите число: ")))
+
+if сalculatorInput == "-":
+   subtraction(a=int(input("Введите число: ")), b=int(input("Введите число: ")))
